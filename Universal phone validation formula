@@ -1,0 +1,9 @@
+OR(
+    ISBLANK(Phone),
+    NOT(
+        REGEX(
+            Phone,
+            "^\\+[1-9][0-9]{7,14}$"
+        )
+    )
+)
